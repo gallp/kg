@@ -8,11 +8,13 @@ use App\Models\GuestEntryLogsModel;
 use App\Models\PersonModel;
 use App\Models\ZoneModel;
 
+
 class Dashboard extends BaseController
 {
-    public function index(): string
+    public function index()
     {
         
+
         $model = new GuestEntryLogsModel();
         $guests = $model->getGuestsWithReferences();
 

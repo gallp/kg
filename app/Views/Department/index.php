@@ -6,9 +6,6 @@
         
     <h2>Działy</h2>
 
-    <!-- Do podglądu JSON -->
-     <details><?= $jsonData ?></details>
-    
     <?php //dd($jsonData);?>
     
     <h3><a href="<?= url_to("Department::new") ?>">Nowy</a></h3>
@@ -44,9 +41,9 @@ $(document).ready(function() {
                     render: function(data, type, row) {
                     return `
                         <div class="action-buttons">
-                            <a href="<?= site_url('guardian') ?>/${row.id}" class="btn-icon view" onclick="event.stopPropagation()">🔍</a>
-                            <a href="<?= site_url('guardian/edit') ?>/${row.id}" class="btn-icon edit" onclick="event.stopPropagation()">✎</a>
-                            <a href="<?= site_url('guardian/delete') ?>/${row.id}" class="btn-icon delete" onclick="return confirm('Usunąć?') && event.stopPropagation()">🗑️</a>
+                            <a href="<?= site_url('department') ?>/${row.id}" class="btn-icon view" onclick="event.stopPropagation()">🔍</a>
+                            <a href="<?= site_url('department/edit') ?>/${row.id}" class="btn-icon edit" onclick="event.stopPropagation()">✎</a>
+                            <a href="<?= site_url('department/delete') ?>/${row.id}" class="btn-icon delete" onclick="return confirm('Usunąć?') && event.stopPropagation()">🗑️</a>
                         </div>
                     `;
                 }

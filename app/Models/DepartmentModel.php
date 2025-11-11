@@ -9,6 +9,6 @@ class DepartmentModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['name'];
     //protected $returnType = 'array';
-    protected $returnType = 'array';
+    protected $returnType = \App\Entities\Department::class;
 
 }

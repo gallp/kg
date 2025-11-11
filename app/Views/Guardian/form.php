@@ -19,9 +19,11 @@
                 <select id="id_department" name="id_department" required>
                     
                     <option value="<?= esc($data['id_department'])?>"><?= esc($data['department_name'])?></option>
-                    
+                           
                     <?php foreach($departments as $department):?>
-                        <option value="<?= esc($department['id']) ?>"><?= esc($department['name']) ?></option>
+                        <pre><?php print_r($department ?? 'Brak danych') ?></pre>
+                        
+                        <option value="<?= esc($department->id) ?>"><?= esc($department->name) ?></option>
                     <?php endforeach; ?>
                 </select>
                 </div><br>

@@ -121,8 +121,6 @@ class Guardian extends BaseController
 
     }
 
-
-
     public function edit($id){
         //dd($id);
         $model = new GuardianModel();
