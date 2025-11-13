@@ -9,10 +9,7 @@
         
     <h2>Goście</h2>
    
-    <!-- Do podglądu JSON -->
-     <details><?= $jsonData ?></details>
-
-     <h3><a href="<?= url_to("Dashboard::new") ?>">Nowy</a></h3>
+    <h3><a href="<?= url_to("Dashboard::new") ?>">Nowy</a></h3>
     
 <div class="table-container">
 
@@ -81,7 +78,7 @@ $(document).ready(function() {
         ],
         order: [[0, 'desc']],
         columnDefs: [
-            { width: '3%', targets: 0 },
+            { width: '2%', targets: 0 },
             { width: '7%', targets: 1 },
             { width: '7%', targets: 2 },
             { width: '5%', targets: 4 }

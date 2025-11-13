@@ -29,6 +29,8 @@ $routes->group('',['filter' => 'session'], static function ($routes){
     $routes->get('department/(:num)','Department::show/$1');
     $routes->get('department/new', 'Department::new');
     $routes->get('department/edit/(:num)','Department::edit/$1');
+    $routes->post('department/create', 'Department::create');
+    $routes->post('department/update/(:num)','Department::update/$1');
 
     $routes->get('person', 'Person::index');
     $routes->get('person/(:num)', 'Person::show/$1'); //wywołanie funkcji show() kontrolera Person
