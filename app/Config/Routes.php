@@ -39,10 +39,18 @@ $routes->group('',['filter' => 'session'], static function ($routes){
     $routes->get('person/edit/(:num)', 'Person::edit/$1');
     $routes->post('person/update/(:num)', 'Person::update/$1');
 
+    
+    
+    $routes->get('admin','Admin::index');
+        
+    $routes->get('user','UserCustom::index');
+    $routes->get('user/edit/(:num)','UserCustom::edit/$1');
+    $routes->post('user/update/(:num)','UserCustom::update/$1');
+
+
     $routes->get('api/guardian', 'Guardian::index');
     $routes->get('api/dashboard', 'Dashboard::apiIndex');
-
-
+    
 });
 
 

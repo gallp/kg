@@ -1,4 +1,3 @@
-<?= $jsonData ?>
 <?= $this->extend('layouts/default') ?>
 
 <?= $this->section('title') ?>
