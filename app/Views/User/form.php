@@ -4,19 +4,19 @@
 
         <div class="form-group">
         <label for="username">Nazwa:</label>
-        <input type="text" id="username" name="username" 
+        <input type="text" class="form-control" id="username" name="username" 
                 value="<?= old("username", $data->username)?>" required>
         </div><br>
 
         <div class="form-group">
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email" 
+        <input type="text" class="form-control" id="email" name="email" 
                 value="<?= old("email", $data->email)?>" required>
         </div><br>
 
         <div class="form-group">
         <label for="password">Zmiana hasła:</label>
-        <input type="password" id="password" name="password" 
+        <input type="password" class="form-control" id="password" name="password" 
                 value="">
         </div><br>
 
@@ -36,6 +36,6 @@
         </div>
 
         </div><br>
-<button>Zapisz</button>
+<button class="btn" type="submit">Zapisz</button>
 
 </div>

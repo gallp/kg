@@ -4,14 +4,8 @@
 
 <?= $this->section('content') ?>
         
-    <h2>Welcome to Person</h2>
+    <h2>Osoby</h2>
 
-    <!-- Do podglądu JSON -->
-     <details><?= $jsonData ?></details>
-    
-    <?php //dd($jsonData);?>
-
-    
     <h3><a href="<?= url_to("Person::new") ?>">Nowy</a></h3>
     
 

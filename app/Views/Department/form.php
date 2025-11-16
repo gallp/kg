@@ -4,10 +4,10 @@
 
                 <div class="form-group">
                 <label for="name">Nazwa:</label>
-                <input type="text" id="name" name="name" 
+                <input type="text" class="form-control" id="name" name="name" 
                         value="<?= old("name", $data->name)?>" required>
                 </div><br>
 
-                <button>Zapisz</button>
+                <button class="btn" type="submit">Zapisz</button>
 
 </div>

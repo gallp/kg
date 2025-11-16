@@ -50,7 +50,6 @@ $(document).ready(function() {
         order: [[0, 'desc']],
         columnDefs: [
             { width: '2%', targets: 0 },
-            { width: '82%', targets: 1 },
             { width: '5%', targets: 2 }
         ]   
     });

@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title><?= $this->renderSection('title') ?></title>
     <base href="<?= base_url()?>" />
     <style>
@@ -106,8 +109,7 @@
         .btn-icon.view:hover { background: #007bff; color: white; border-color: #007bff; }
         .btn-icon.edit:hover { background: #ffc107; color: black; border-color: #ffc107; }
         .btn-icon.delete:hover { background: #dc3545; color: white; border-color: #dc3545; }
-            </style>
-    
+    </style>
 </head>
 <body>
         

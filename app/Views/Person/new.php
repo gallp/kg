@@ -4,8 +4,6 @@
 
 <?= $this->section('content') ?>
         
-    <h2>Welcome to New</h2>
-    
     <?php if(session()->has('errors')): ?>
     <ul>
         <?php foreach(session('errors') as $error): ?>
