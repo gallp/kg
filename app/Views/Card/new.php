@@ -11,11 +11,11 @@
         <?php endforeach; ?>
     </ul>
     <?php endif; ?>
+    <?= validation_list_errors() ?>
+    <?= form_open('card/create') //helper form - submit wywołanie funkcji create konrolera Card?>
     
-    <?= form_open("guardian/create") //helper form - submit wywołanie funkcji create konrolera Guardian?>
-    
-        <?= $this->include("Guardian/form");?>
+        <?= $this->include("card/form");?>
         
-    </form>
+    <?= form_close() ?>
 
 <?= $this->endSection() ?>

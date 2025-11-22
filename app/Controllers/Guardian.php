@@ -4,7 +4,6 @@ namespace App\Controllers;
 
 use App\Models\GuardianModel;
 use App\Models\DepartmentModel;
-
 use CodeIgniter\Exceptions\PageNotFoundException;
 use Config\DataBaseErrors;
 
@@ -98,19 +97,7 @@ class Guardian extends BaseController
         }
     }
 
-
-    /*public function show($id){
-        
-        $model = new GuardianModel();
-        $data = $model->find($id);
-        //dd($data);
-        return view("Guardian/show",[
-            'data' => $data
-        ]);
-
-    }*/
-
-    public function show($id){
+     public function show($id){
         
         $model = new GuardianModel();
         $data = $model->getGuardian($id);

@@ -13,7 +13,7 @@
     </div><br>
     
     <div>
-        <a href="<?= site_url('admin/group')?>">Grupy</a>
+        <a href="<?= site_url('card')?>">Karty RCP</a>
     </div><br>
 
 <?= $this->endSection() ?>

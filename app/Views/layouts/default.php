@@ -118,7 +118,9 @@
         <a href="<?= base_url('dashboard') ?>" class="<?= url_is('dashboard') && !url_is('dashboard/admin') ? 'active' : '' ?>">Goście</a>
         <a href="<?= base_url('guardian') ?>" class="<?= url_is('guardian*') ? 'active' : '' ?>">Opiekunowie</a>
         <a href="<?= base_url('department') ?>" class="<?= url_is('department*') ? 'active' : '' ?>">Działy</a>
+        <a href="<?= base_url('card') ?>" class="<?= url_is('card*') ? 'active' : '' ?>">Karty RCP</a>
         <a href="<?= base_url('person') ?>" class="<?= url_is('person*') ? 'active' : '' ?>">Osoby</a>
+        
         <a href="<?= base_url('admin') ?>" class="<?= url_is('admin*') ? 'active' : '' ?>">Admin</a>
         <a href="<?= base_url('contact') ?>" class="<?= url_is('contact*') ? 'active' : '' ?>">Kontakt</a>
         <?php if (auth()->loggedIn()): ?>

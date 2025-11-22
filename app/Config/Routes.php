@@ -32,6 +32,15 @@ $routes->group('',['filter' => 'session'], static function ($routes){
     $routes->post('department/create', 'Department::create');
     $routes->post('department/update/(:num)','Department::update/$1');
 
+    $routes->get('card', 'Card::index');
+    $routes->get('card/(:num)','Card::show/$1');
+    $routes->get('card/new', 'Card::new');
+    $routes->get('card/edit/(:num)','Card::edit/$1');
+    $routes->post('card/create', 'Card::create');
+    $routes->post('card/update/(:num)','Card::update/$1');
+
+
+
     $routes->get('person', 'Person::index');
     $routes->get('person/(:num)', 'Person::show/$1'); //wywołanie funkcji show() kontrolera Person
     $routes->get('person/new', 'Person::new');

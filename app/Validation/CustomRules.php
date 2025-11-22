@@ -22,4 +22,6 @@ class CustomRules
         // + - co najmniej jeden znak
         return preg_match('/^[a-zA-ZąćęłńóśźżĄĆĘŁŃÓŚŹŻ ]+$/u', $str) === 1;
     }
+
+    
 }
