@@ -9,10 +9,10 @@
         <?php //dd($data); ?>
         
         <guardian>
-            <h2><?= esc($data["name"])?></h2>
-            <p><?= esc($data["email"])?></p>
-            <p><?= esc($data["phone"])?></p>
-            <p><?= esc($data["department_name"])?></p>
+            <h3><b>Imie i nazwisko: </b><?= esc($data["name"])?></h3>
+            <h3><b>Email: </b><?= esc($data["email"])?></h3>
+            <h3><b>Telefon: </b> <?= esc($data["phone"])?></h3>
+            <h3><b>Dział: </b><?= esc($data["department_name"])?></h3>
         </guardian>
 
     <a href="<?=url_to("Guardian::edit", $data["id"])?>">edytuj</a>

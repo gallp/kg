@@ -4,7 +4,7 @@
 
 <?= $this->section('content') ?>
     <?php //print_r(get_defined_vars());?>
-    <h2>Welcome to edit</h2>
+    <h2>Edycja</h2>
     
     <?php if(session()->has('errors')): ?>
     <ul>

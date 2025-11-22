@@ -4,7 +4,7 @@
 
 <?= $this->section('content') ?>
         
-    <h2>Edytuj Wejście</h2>
+    <h2>Edycja Wejścia</h2>
     
     <?php if(session()->has('errors')): ?>
     <ul>

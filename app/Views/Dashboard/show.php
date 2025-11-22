@@ -4,17 +4,16 @@
 
 <?= $this->section('content') ?>
         
-    <h2>Welcome to Show</h2>
+    <h3>Welcome to Show</h3>
   
         <?php //dd($data); ?>
         
         <person>
-            <h2><?= esc($data["fname"])?></h2>
-            <h2><?= esc($data["sname"])?></h2>
-            <p><?= esc($data["guest_company"])?></p>
-            <p><?= esc($data["guest_count"])?></p>
-            <h2><?= esc($data["fname"])?></h2>
-            <p><?= esc($data["comment"])?></p>
+            <h3>Imie: <?= esc($data["fname"])?></h3>
+            <h3>Nazwisko: <?= esc($data["sname"])?></h3>
+            <h3>Firma: <?= esc($data["guest_company"])?></h3>
+            <h3>Liczba gości: <?= esc($data["guest_count"])?></h3>
+            <h3>Komentarz: <?= esc($data["comment"])?></h3>
         </person>
 
     <a href="<?=url_to("Dashboard::edit", $data["id"])?>">edytuj</a>

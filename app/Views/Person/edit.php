@@ -4,7 +4,7 @@
 
 <?= $this->section('content') ?>
         
-    <h2>Edit Person</h2>
+    <h2>Edycja</h2>
     
     <?php if(session()->has('errors')): ?>
     <ul>
