@@ -51,6 +51,25 @@ class Database extends Config
         ],
     ];
 
+    public array $mssql= [
+        'DSN'        => '',
+        'hostname'   => '192.168.128.5',
+        'username'   => 'kg',
+        'password'   => 'kg2025!',
+        'database'   => 'rcpserwer',
+        'schema'     => 'dbo',
+        'DBDriver'   => 'SQLSRV',
+        'DBPrefix'   => '',
+        'pConnect'   => false,
+        'DBDebug'    => true,
+        'charset'    => 'utf8',
+        'swapPre'    => '',
+        'encrypt'    => false,
+        'failover'   => [],
+        'port'       => 1433,
+    ];
+
+   
     //    /**
     //     * Sample database connection for SQLite3.
     //     *
