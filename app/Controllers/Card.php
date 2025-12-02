@@ -114,7 +114,7 @@ class Card extends BaseController{
         }
 
         $rules = [
-            'card_number' => 'required|exact_length[10]|numeric|is_unique[rcpcard.card_number]'
+            'card_number' => 'required|exact_length[7]|numeric|is_unique[rcpcard.card_number]'
         ];
         
         $data = $this->request->getPost(array_keys($rules));

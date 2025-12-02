@@ -49,7 +49,7 @@ $routes->group('',['filter' => 'session'], static function ($routes){
     $routes->post('person/update/(:num)', 'Person::update/$1');
 
 
-    $routes->get('sync', 'Sync::index');
+    $routes->get('presence', 'Presence::index');
 
     $routes->get('api/guardian', 'Guardian::index');
     $routes->get('api/dashboard', 'Dashboard::apiIndex');

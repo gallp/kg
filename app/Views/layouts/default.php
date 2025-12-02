@@ -120,7 +120,7 @@
         <a href="<?= base_url('department') ?>" class="<?= url_is('department*') ? 'active' : '' ?>">Działy</a>
         <a href="<?= base_url('card') ?>" class="<?= url_is('card*') ? 'active' : '' ?>">Karty RCP</a>
         <a href="<?= base_url('person') ?>" class="<?= url_is('person*') ? 'active' : '' ?>">Osoby</a>
-        
+        <a href="<?= base_url('presence') ?>" class="<?= url_is('presence') && !url_is('presence') ? 'active' : '' ?>">Obecność</a>
         <a href="<?= base_url('admin') ?>" class="<?= url_is('admin*') ? 'active' : '' ?>">Admin</a>
         <a href="<?= base_url('contact') ?>" class="<?= url_is('contact*') ? 'active' : '' ?>">Kontakt</a>
         <?php if (auth()->loggedIn()): ?>
